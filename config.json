@@ -1,0 +1,31 @@
+{
+	"config_dir": "data",
+	"data_dir": "data",
+	"backup_dir": "./backup",
+	"limit": 10,
+	"p2p_peer_address": [
+		"p2p.fometa.io:59877",
+		"13.78.23.108:9870",
+		"p2p-mainnet.fibos123.com:9977",
+		"p2p.fibos.fi:59595",
+		"sl-p2p.fibos.io:9870",
+		"va-p2p.fibos.io:9870",
+		"ca-p2p.fibos.io:9870",
+		"p2p.fophoenix.com:9870",
+		"p2p-mainnet.fobp.pro:9873",
+		"p2p-mainnet.fibosironman.io:9999",
+		"p2p.xm.fo:10300",
+		"p2p.fibos.team:9876",
+		"40.115.179.182:9870",
+		"p2p.mainnet.fibos.me:80",
+		"se-p2p.fibos.io:9870",
+		"to-p2p.fibos.io:9870",
+		"p2p-mainnet.ilovefibos.com:9876",
+		"seed.fibos.rocks:10100",
+		"seed-mainnet.fibscan.io:9103",
+		"ln-p2p.fibos.io:9870",
+		"superfibos.com:9870",
+		"fibos.smr123.com:7890",
+		"p2p-mainnet.loveyy.xyz:9871"
+	]
+}
