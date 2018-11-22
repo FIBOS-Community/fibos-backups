@@ -42,6 +42,14 @@ function syncData() {
 
 	process.run('tar', ['-zcvf', filename, config.data_dir]);
 
+	//删除数据，解压证明可用
+	console.log("rving =====>", config.data_dir);
+	process.run('rm', ['-rf', config.data_dir]);
+
+	console.log("tar -zxvSf =====>", config.data_dir);
+	process.run('tar', ['-zxvSf', filename]);
+	runSeed();
+
 	console.log("mving  =====>" + filename + " " + config.backup_dir + "/" + filename);
 	process.run('mv', [filename, config.backup_dir + "/" + filename]);
 
@@ -61,7 +69,7 @@ function syncData() {
 		});
 	}
 	console.log("restart   sync");
-	runSeed();
-	coroutine.sleep(60 * 1000);
+	
+	coroutine.sleep(60 * 60 * 1000);
 	syncData()
 }
