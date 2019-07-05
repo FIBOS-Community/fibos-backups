@@ -33,6 +33,8 @@ if (!fs.exists(fibos.data_dir) && !fs.exists(fibos.config_dir)) {
 	chain_config['genesis-json'] = "genesis.json";
 }
 
+//1.7.1.4 for eth fox
+fibos.load("ethash");
 
 fibos.load("producer", {
 	'max-transaction-time': 3000
